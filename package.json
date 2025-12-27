@@ -1,0 +1,30 @@
+{
+  "name": "privacypuzzle",
+  "version": "1.0.0",
+  "description": "A secure message encryptor integrated into digital puzzles using steganography and procedural generation, promoting ethical privacy principles.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "steganography",
+    "cryptography",
+    "node.js",
+    "puzzle",
+    "privacy"
+  ],
+  "author": "0xlayout",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^14.0.2",
+    "jimp": "^1.6.0",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
