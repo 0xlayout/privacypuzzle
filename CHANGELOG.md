@@ -31,3 +31,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Educational warnings about steganography limitations and promotion of defense-in-depth principles.
 
 This marks the initial stable release of PrivacyPuzzle, suitable for educational use, cybersecurity demonstrations, and portfolio showcasing.
+
+## [1.2.0] - 2025-12-27
+
+### Changed
+- Major CLI improvements for a modern, interactive, and visually appealing interface:
+  - Replaced `ora` with `nanospinner` for lightweight, smooth, and reliable spinners.
+  - Replaced `boxen` and `chalk` with `kleur` and `gradient-string` for fully styled, colorful, and gradient-enhanced text output.
+  - Replaced `inquirer` with `enquirer` for faster, more flexible, and interactive prompts.
+  - Banners now feature gradient ASCII art using `figlet` + `gradient-string`.
+  - Tips and status messages use color highlights and emojis for better visual feedback (`✅`, `❌`, `💡`).
+  - Fully compatible with Node 22+ without ESM import issues.
+  - CLI commands (`hide`, `reveal`, `educate`) now feature smooth, sequential spinners with progress messages for all major processing steps.
+  - Improved table displays for help and educational content with `cli-table3`.
+  - Interactive prompts gracefully skip already provided options, enhancing usability in scripts and interactive mode.
+
+## Added
+- Gradient-based educational content display for better readability and emphasis.
+- Modern emoji-based visual feedback in CLI for success, error, and info messages.
+- Error handling and messaging improvements, including clearer instructions for password or file errors.
+- Modular CLI structure fully decoupled from legacy styling libraries, simplifying maintenance and future enhancements.
+
+## Security
+- No changes to underlying cryptography; AES-256-GCM, PBKDF2 key derivation, and LSB steganography remain fully secure.
+- All previous security guarantees preserved.
+
+**✅ Summary**: 
+`v1.2.0` transforms PrivacyPuzzle into a modern, visually enhanced, interactive CLI, maintaining all core educational and cryptographic functionality while delivering a smooth, user-friendly experience.
