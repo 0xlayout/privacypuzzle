@@ -2,7 +2,7 @@
 const { program } = require('commander');
 const fs = require('node:fs');
 const path = require('node:path');
-const { encrypt, decrypt } = require('./lib/encryptation');
+const { encrypt, decrypt } = require('./lib/encryption');
 const { hideData, extractData } = require('./lib/steganography');
 const { generateNonogram, renderNonogramPuzzle } = require('./lib/puzzleGenerator');
 const { getFullEducationalContent, getIntroduction } = require('./lib/education');
