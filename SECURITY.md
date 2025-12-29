@@ -7,6 +7,7 @@ PrivacyPuzzle is currently in active development.
 | Version | Supported |
 |--------|-----------|
 | 1.x    | ✅ Yes |
+| 1.2.0    | ✅ Yes |
 
 ---
 
